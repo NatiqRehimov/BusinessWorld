@@ -1288,7 +1288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 8859287201633109892}
-  motorForce: 250
+  motorForce: 500
   wheelsC:
   - {fileID: 1406844589796597955}
   - {fileID: 3912130517358239639}

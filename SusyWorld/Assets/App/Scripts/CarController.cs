@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CarController : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class CarController : MonoBehaviour
     private Vector2 inputs;
     [SerializeField] private WheelCollider[] wheelsC;
     [SerializeField] private Transform[] wheelT;
+    [SerializeField] private Text speed; 
 
     private void FixedUpdate()
     {
@@ -19,11 +21,12 @@ public class CarController : MonoBehaviour
         Steer();
         Accelerate();
         UpdateWheelPoses(wheelsC,wheelT);
+        CarParametersInUI();
     }
     private void Accelerate()
     {
-        wheelsC[0].motorTorque = inputs.y*motorForce;
-        wheelsC[1].motorTorque = inputs.y*motorForce;
+        wheelsC[0].motorTorque = inputs.y * motorForce;
+        wheelsC[1].motorTorque = inputs.y * motorForce;
     }
     private void Steer()
     {
@@ -43,5 +46,9 @@ public class CarController : MonoBehaviour
             _points[i].position = _pos;
             _points[i].rotation = _quat;
         }
+    }
+    private void CarParametersInUI()
+    {
+        speed.text = Mathf.Round(rb.velocity.magnitude)*5+" km/h";
     }
 }

@@ -49,6 +49,6 @@ public class CarController : MonoBehaviour
     }
     private void CarParametersInUI()
     {
-        speed.text = Mathf.Round(rb.velocity.magnitude)*5+" km/h";
+        speed.text = Mathf.Round(rb.velocity.magnitude)*5+" mph";
     }
 }

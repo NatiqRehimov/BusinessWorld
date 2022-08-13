@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3c21b10da0e55154a98c201cc1ffafe6
+guid: f6078480cb376974a98061636d766c3b
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Escape Velocity Expanded Ital
+  - Alba Super
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

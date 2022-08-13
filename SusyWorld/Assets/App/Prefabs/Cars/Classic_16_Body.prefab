@@ -1210,10 +1210,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1705288959730610779}
+  - component: {fileID: 3733858531698138648}
   - component: {fileID: 1705288959740190139}
   - component: {fileID: 1587319321047223211}
   - component: {fileID: 8859287201633109892}
   - component: {fileID: 7927131104155553631}
+  - component: {fileID: 3568528272751619061}
   m_Layer: 0
   m_Name: Classic_16_Body
   m_TagString: Untagged
@@ -1256,6 +1258,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3733858531698138648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705288959730708091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d243eccd6c12fe243bdeb14abee5642c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customers: {fileID: 0}
+  coins: {fileID: 0}
 --- !u!95 &1705288959740190139
 Animator:
   serializedVersion: 3
@@ -1299,6 +1315,7 @@ MonoBehaviour:
   - {fileID: 2714295512466646669}
   - {fileID: 1628514915230457491}
   - {fileID: 1443364390479758573}
+  speed: {fileID: 0}
 --- !u!54 &8859287201633109892
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1328,6 +1345,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 1.5, z: 4}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!65 &3568528272751619061
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705288959730708091}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 1}
 --- !u!1 &1705288959730708093
 GameObject:
   m_ObjectHideFlags: 0

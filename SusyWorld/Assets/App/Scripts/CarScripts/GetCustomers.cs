@@ -27,8 +27,8 @@ public class GetCustomers : MonoBehaviour
             }
             notPickedCustomers.notPickedCustomers = 3-customersCount;
             customersCount = 0;
-            customers.text = "Customers: " + customersCount;
-            coins.text = "Coins: " + coinsCount;
+            customers.text = "" + customersCount;
+            coins.text = "" + coinsCount;
         }
     }
 }

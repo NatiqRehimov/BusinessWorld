@@ -16,7 +16,7 @@ public class GetCustomers : MonoBehaviour
         {
             Destroy(other.gameObject);
             customersCount++;
-            customers.text = "Customers: " + customersCount;
+            customers.text = "" + customersCount;
         }
         else if (other.CompareTag("Station") && customersCount>0)
         {
